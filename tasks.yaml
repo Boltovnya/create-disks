@@ -1,0 +1,10 @@
+---
+- name: Create filesystem
+  hosts: all
+  become: yes
+  tasks:
+  - name: create!
+    community.general.filesystem:
+      dev: /dev/sdb
+      fstype: xfs
+      state: present
