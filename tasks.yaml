@@ -5,6 +5,6 @@
   tasks:
   - name: create!
     community.general.filesystem:
-      dev: /dev/sdb
+      dev: /dev/vdb
       fstype: xfs
       state: present
